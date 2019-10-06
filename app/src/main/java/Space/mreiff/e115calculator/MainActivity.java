@@ -2,6 +2,7 @@ package Space.mreiff.e115calculator;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     Button multiply;
     Button divide;
     Button clear;
+    Button mapButton;
 
 
     @Override
@@ -38,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
         multiply = (Button)findViewById(R.id.multiply);
         divide = (Button)findViewById(R.id.divide);
         clear = (Button)findViewById(R.id.clear);
+        mapButton = (Button)findViewById(R.id.mapButton);
 
         //addition
         add.setOnClickListener(new View.OnClickListener() {
@@ -97,7 +100,19 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
+        mapButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActvityMap();
+            }
+        });
 
     }
+
+    public void openActvityMap() {
+        Intent intent = new Intent(this, MapsActivity.class);
+        startActivity(intent);
+
+    }
+
 }
