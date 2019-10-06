@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
                 n2 = Float.parseFloat(number2.getText().toString());
                 res = n1 + n2; //do math on floats
 
-                result.setText(String.valueOf(res)); //print result to text field as a string
+                result.setText("Sum: " + String.valueOf(res)); //print result to text field as a string
             }
         });
 
@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
                 n2 = Float.parseFloat(number2.getText().toString());
                 res = n1 - n2;
 
-                result.setText(String.valueOf(res));
+                result.setText("Difference: " + String.valueOf(res));
             }
         });
 
@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
                 n2 = Float.parseFloat(number2.getText().toString());
                 res = n1 * n2;
 
-                result.setText(String.valueOf(res));
+                result.setText("Product: " + String.valueOf(res));
             }
         });
 
@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
                 n2 = Float.parseFloat(number2.getText().toString());
                 res = n1 / n2;
 
-                result.setText(String.valueOf(res));
+                result.setText("Quotient: " + String.valueOf(res));
             }
         });
 
