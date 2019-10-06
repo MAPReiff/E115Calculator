@@ -1,3 +1,5 @@
+//Guide to getting button & text inputs https://www.youtube.com/watch?v=kp0DefpSMYw
+
 package Space.mreiff.e115calculator;
 
 import androidx.appcompat.app.AppCompatActivity;

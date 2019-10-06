@@ -1,3 +1,5 @@
+//Guide to getting and sowing user location https://www.youtube.com/watch?v=pNeuuImirHY
+
 package Space.mreiff.e115calculator;
 
 import androidx.fragment.app.FragmentActivity;
